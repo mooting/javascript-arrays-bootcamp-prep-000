@@ -15,3 +15,8 @@ function destructivelyAddElementToEndOfArray( a, n ) {
 }
 
 function accessElementInArray( a, i ) { return a[i] }
+
+function destructivelyRemoveElementFromBeginningOfArray ( a ){ 
+  a.shift()
+  return a
+}
