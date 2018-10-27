@@ -3,12 +3,8 @@ var chocolateBars = ['snickers', 'hundred grand', 'kitkat', 'skittles']
 function addElementToBeginningOfArray( a, n ) { return [n, ...a] }
 
 function destructivelyAddElementToBeginningOfArray( a, n ) {
-  console.log(a)
-  console.log(n)
-  var value = a.unshift( n )
-  console.log( `value: ${value}`)
-  return value
-
+  a.unshift( n )
+  return a
 }
 //function destructivelyAddElementToBeginningOfArray( a, n ) { return a + n }
 
